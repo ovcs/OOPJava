@@ -3,6 +3,9 @@ package GeoTree.core.tree_module;
 
 import GeoTree.core.model.*;
 
+/**
+ * Класс для постройки дерева и сохранения структуры макета.
+ */
 public class TreeCreator extends TreeController {
 
     public TreeCreator(Cell firstElement) {

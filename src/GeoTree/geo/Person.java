@@ -3,6 +3,10 @@ package GeoTree.geo;
 
 import GeoTree.core.model.CellObject;
 
+/**
+ * Класс для построения геологического дерева человека. Здесь человек используется не как существо,
+ * а как запись в хранилище, от чего и название.
+ */
 public class Person extends CellObject {
     int ID;
     String fullName;

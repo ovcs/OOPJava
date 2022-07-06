@@ -5,6 +5,10 @@ import GeoTree.core.model.Relation;
 import GeoTree.core.model.Relationship;
 import GeoTree.core.model.TreeObject;
 
+
+/**
+ * Класс для визуального просмотра дерева и его отдельных объектов модели.
+ */
 public class TreeWatcher extends TreeController {
 
     StringBuilder sb;

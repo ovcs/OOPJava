@@ -5,6 +5,10 @@ import GeoTree.core.model.TreeObject;
 
 import java.util.ArrayList;
 
+/**
+ * Дерево является хранилищем его же объектов TreeObjects. Так как, эти объекты имеют ссылочные связи между собой,
+ * то было решено взять за основу ArrayList, и хранить ссылки в виде адреса на ячейки этого массива.
+ */
 public class Tree {
     ArrayList<TreeObject> tree;
 

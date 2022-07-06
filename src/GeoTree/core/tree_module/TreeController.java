@@ -2,6 +2,9 @@ package GeoTree.core.tree_module;
 
 import GeoTree.core.model.CellObject;
 
+/**
+ * Основая абстрактная программа для работы с деревом.
+ */
 public abstract class TreeController {
 
     protected final Tree tree;

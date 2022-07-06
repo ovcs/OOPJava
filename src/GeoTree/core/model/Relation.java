@@ -1,5 +1,9 @@
 package GeoTree.core.model;
 
+/**
+ * Второй из объектов TreeObject, рассмотренный в данной программе. Он охарактеризует понятие связи между двумя
+ * объектами дерева. В значении имеет тип собираемой связи между объектами.
+ */
 public class Relation extends TreeObject {
 
     public Relation(Relationship value) {
