@@ -1,6 +1,11 @@
 package Messenger.model.chat;
 
-import Messenger.model.chat.Chat;
-
 public class GroupChat extends Chat {
+    public GroupChat() {
+        super(Integer.MAX_VALUE);
+    }
+
+    public GroupChat(GroupChat gc) {
+        super(gc.getParticipates(), gc.getListMessage());
+    }
 }

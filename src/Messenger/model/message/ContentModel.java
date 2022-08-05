@@ -2,17 +2,17 @@ package Messenger.model.message;
 
 import Messenger.ext.ID;
 import Messenger.ext.StaticCreator;
-import Messenger.model.sbj.User;
+import Messenger.model.sbj.Client;
 
 import java.util.Date;
 
 public abstract class ContentModel {
     private final ID id;
     private final Date creationTime;
-    private final User creator;
+    private final Client creator;
     protected Object content;
 
-    public ContentModel(Object content, User creator) {
+    public ContentModel(Object content, Client creator) {
         this.id = StaticCreator.getNewIDFor(TextMessage.class);
         this.creationTime = StaticCreator.getDateTime();
         this.creator = creator;
@@ -27,7 +27,7 @@ public abstract class ContentModel {
         return creationTime;
     }
 
-    public User getCreator() {
+    public Client getCreator() {
         return creator;
     }
 }

@@ -1,10 +1,11 @@
 package Messenger.model.message;
 
 import Messenger.model.sbj.Client;
+import Messenger.model.sbj.User;
 
-public class TextMessage extends ContentModel {
+public class TextMessage extends Message {
 
-    public TextMessage(String text, Client owner) {
+    public TextMessage(String text, User owner) {
         super(text, owner);
     }
 

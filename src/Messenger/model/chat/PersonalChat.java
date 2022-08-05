@@ -1,6 +1,10 @@
 package Messenger.model.chat;
 
-import Messenger.model.chat.Chat;
-
 public class PersonalChat extends Chat {
+    public PersonalChat() {
+        super(2);
+    }
+    public PersonalChat(PersonalChat pc) {
+        super(pc.getParticipates(), pc.getListMessage());
+    }
 }

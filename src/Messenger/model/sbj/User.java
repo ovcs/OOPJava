@@ -1,9 +1,13 @@
 package Messenger.model.sbj;
 
-import Messenger.model.message.TextMessage;
+public class User implements Client {
+    String fullName;
 
-public interface User {
-    TextMessage createMsg(String text, Hub chatroom);
-    void getAllM();
-    void getUnreadM();
+    public User(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
 }
