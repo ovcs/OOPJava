@@ -1,10 +1,14 @@
 package Messenger.rep;
 
+import java.util.Collection;
+import java.util.HashSet;
 import java.util.Set;
 
-public interface DT<T> {
-    Set<T> get();
-    void getByID(int ID);
-    void update(T e);
-    void remove(T e);
+public class DT<T> extends HashSet<T> {
+    public DT() {
+    }
+
+    public DT(Collection<? extends T> c) {
+        super(c);
+    }
 }

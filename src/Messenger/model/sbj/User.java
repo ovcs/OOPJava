@@ -1,6 +1,7 @@
 package Messenger.model.sbj;
 
-public class User implements Client {
+// TODO Написать отдельно объект системы, отдельно объект, который может обмениваться сообщениями
+public class User {
     String fullName;
 
     public User(String fullName) {

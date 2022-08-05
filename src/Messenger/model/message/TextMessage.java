@@ -10,10 +10,10 @@ public class TextMessage extends Message {
     }
 
     public String text() {
-        return (String) content;
+        return (String) this.getContent();
     }
 
     public void changeText(String text) {
-        this.content = text;
+        this.setContent(text);
     }
 }
