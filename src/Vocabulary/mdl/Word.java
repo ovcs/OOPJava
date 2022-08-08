@@ -1,6 +1,6 @@
 package Vocabulary.mdl;
 
-public class Word {
+public class Word implements Comparable<Word> {
     private String word;
 
     public Word(String word) {
@@ -14,5 +14,10 @@ public class Word {
     @Override
     public String toString() {
         return word;
+    }
+
+    @Override
+    public int compareTo(Word o) {
+        return word.compareTo(o.toString());
     }
 }

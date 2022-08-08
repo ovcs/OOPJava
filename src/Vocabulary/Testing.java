@@ -13,11 +13,11 @@ public class Testing {
         Input keyboard = new Input();
         Output view = new Output();
 
-        vc.loadMatchWords(new SMatchWords(Randomizer.getInstance(), new Repository<>()));
+        vc.loadMatchWords(new SMatchWords(new Randomizer(), new Repository<>()));
         for (int i = 0; i < 5; i++) {
             view.showKeyWord(vc.loadRandomKeyWord());
             vc.setInputWord(keyboard.enterString());
-            view.showCorrectAnswer(vc.correctAnswer());
+            view.showCorrectAnswer(vc.getCorrectAnswer());
         }
     }
 }

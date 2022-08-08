@@ -18,16 +18,16 @@ public class VocabularyCtrl implements CMatchWords {
 
     @Override
     public void setInputWord(String input) {
-
+        sMatchWords.compareWords(new Word(input));
     }
 
     @Override
-    public boolean correctAnswer() {
-        return false;
+    public boolean getCorrectAnswer() {
+        return sMatchWords.getLastCompare();
     }
 
     @Override
     public Word loadRandomKeyWord() {
-        return null;
+        return sMatchWords.getRandomWord();
     }
 }
