@@ -1,8 +1,6 @@
 package Vocabulary.ctrl;
 
-import Vocabulary.mdl.Pair;
 import Vocabulary.mdl.Word;
-import Vocabulary.srv.IService;
 import Vocabulary.srv.SMatchWords;
 
 public class VocabularyCtrl implements CMatchWords {

@@ -11,7 +11,6 @@ import java.util.Iterator;
 public class SMatchWords {
     private boolean correctAnswer;
     private final Repository<Pair<Word>> repository;
-    private WordSender ws;
     private final Randomizer randomizer;
 
     private Pair<Word> temp;
